@@ -1,0 +1,1613 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb  3 10:03:39 2020
+# Process ID: 7920
+# Current directory: D:/verilog_test/M2V
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2020 D:\verilog_test\M2V\M2V.xpr
+# Log file: D:/verilog_test/M2V/vivado.log
+# Journal file: D:/verilog_test/M2V\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verilog_test/M2V/M2V.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 834.629 ; gain = 118.961
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim/xsim.dir/M2V_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 54.367 ; gain = 1.125
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb  3 10:11:33 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 870.566 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "M2V_tb_behav -key {Behavioral:sim_1:Functional:M2V_tb} -tclbatch {M2V_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source M2V_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'M2V_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 892.805 ; gain = 22.238
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 902.871 ; gain = 6.508
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 902.871 ; gain = 6.508
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 905.938 ; gain = 1.156
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 908.328 ; gain = 0.527
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 910.539 ; gain = 0.648
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 912.332 ; gain = 0.391
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 925.066 ; gain = 0.363
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 925.605 ; gain = 0.113
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 928.598 ; gain = 0.023
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 930.383 ; gain = 0.090
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 931.559 ; gain = 0.730
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 931.559 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 933.313 ; gain = 0.000
+step
+Stopped at time : 1010 ns : File "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" Line 69
+step
+Stopped at time : 1010 ns : File "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" Line 68
+step
+Stopped at time : 1010 ns : File "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" Line 39
+step
+Stopped at time : 1010 ns : File "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" Line 45
+add_bp {D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v} 99
+remove_bps -file {D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v} -line 99
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 933.543 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 934.234 ; gain = 0.043
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 934.441 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 937.410 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 937.410 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 937.410 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 937.410 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 937.996 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 937.996 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 937.996 ; gain = 0.000
+run 10 us
+run 20 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 942.094 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 942.094 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 942.094 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v:54]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v:55]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v:56]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v:57]
+WARNING: [VRFC 10-986] literal value truncated to fit in 32 bits [D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v:59]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 942.711 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 944.125 ; gain = 1.023
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 945.910 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 945.910 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 946.066 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 948.387 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 948.387 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 950.922 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 950.922 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'M2V_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj M2V_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/M2V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sources_1/new/PE1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2V/M2V.srcs/sim_1/new/M2V_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M2V_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2V/M2V.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d4877f24c9a947798d730053e8bce12c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot M2V_tb_behav xil_defaultlib.M2V_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PE1
+Compiling module xil_defaultlib.M2V_default
+Compiling module xil_defaultlib.M2V_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot M2V_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 950.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project M2M D:/verilog_test/M2M -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 958.691 ; gain = 5.527
+file mkdir D:/verilog_test/M2M/M2M.srcs/sources_1/new
+close [ open D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v w ]
+add_files D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v
+close [ open D:/verilog_test/M2M/M2M.srcs/sources_1/new/pulsation_array.v w ]
+add_files D:/verilog_test/M2M/M2M.srcs/sources_1/new/pulsation_array.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir D:/verilog_test/M2M/M2M.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/verilog_test/M2M/M2M.srcs/sim_1/new/TB_pulsation_array.v w ]
+add_files -fileset sim_1 D:/verilog_test/M2M/M2M.srcs/sim_1/new/TB_pulsation_array.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_pulsation_array' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_pulsation_array_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2M/M2M.srcs/sources_1/new/pulsation_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulsation_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2M/M2M.srcs/sim_1/new/TB_pulsation_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB_pulsation_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1c83b10b893f497aa925d8ecaa804a67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_pulsation_array_behav xil_defaultlib.TB_pulsation_array xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <xbip_multadd_0> not found while processing module instance <MultAccumIP> [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+create_ip -name xbip_multadd -vendor xilinx.com -library ip -version 3.0 -module_name xbip_multadd_0 -dir d:/verilog_test/M2M/M2M.srcs/sources_1/ip
+set_property -dict [list CONFIG.c_a_width {8} CONFIG.c_b_width {8} CONFIG.c_c_width {8} CONFIG.c_out_high {47} CONFIG.c_out_low {0}] [get_ips xbip_multadd_0]
+generate_target {instantiation_template} [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xbip_multadd_0'...
+generate_target all [get_files  d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xbip_multadd_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xbip_multadd_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xbip_multadd_0'...
+catch { config_ip_cache -export [get_ips -all xbip_multadd_0] }
+export_ip_user_files -of_objects [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci]
+launch_runs -jobs 4 xbip_multadd_0_synth_1
+[Mon Feb  3 22:48:02 2020] Launched xbip_multadd_0_synth_1...
+Run output will be captured here: D:/verilog_test/M2M/M2M.runs/xbip_multadd_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci] -directory D:/verilog_test/M2M/M2M.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_test/M2M/M2M.ip_user_files -ipstatic_source_dir D:/verilog_test/M2M/M2M.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_test/M2M/M2M.cache/compile_simlib/modelsim} {questa=D:/verilog_test/M2M/M2M.cache/compile_simlib/questa} {riviera=D:/verilog_test/M2M/M2M.cache/compile_simlib/riviera} {activehdl=D:/verilog_test/M2M/M2M.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.c_use_pcin {true} CONFIG.c_out_high {15} CONFIG.c_out_low {0} CONFIG.c_c_latency {0}] [get_ips xbip_multadd_0]
+generate_target all [get_files  d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xbip_multadd_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xbip_multadd_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xbip_multadd_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xbip_multadd_0'...
+catch { config_ip_cache -export [get_ips -all xbip_multadd_0] }
+export_ip_user_files -of_objects [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci] -no_script -sync -force -quiet
+reset_run xbip_multadd_0_synth_1
+launch_runs -jobs 4 xbip_multadd_0_synth_1
+[Mon Feb  3 22:50:19 2020] Launched xbip_multadd_0_synth_1...
+Run output will be captured here: D:/verilog_test/M2M/M2M.runs/xbip_multadd_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci] -directory D:/verilog_test/M2M/M2M.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_test/M2M/M2M.ip_user_files -ipstatic_source_dir D:/verilog_test/M2M/M2M.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_test/M2M/M2M.cache/compile_simlib/modelsim} {questa=D:/verilog_test/M2M/M2M.cache/compile_simlib/questa} {riviera=D:/verilog_test/M2M/M2M.cache/compile_simlib/riviera} {activehdl=D:/verilog_test/M2M/M2M.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_pulsation_array' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_pulsation_array_vlog.prj"
+"xvhdl --incr --relax -prj TB_pulsation_array_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/sim/xbip_multadd_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xbip_multadd_0
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1c83b10b893f497aa925d8ecaa804a67 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L xbip_multadd_v3_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_pulsation_array_behav xil_defaultlib.TB_pulsation_array xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+Completed static elaboration
+Starting simulation data flow analysis
+ERROR: [XSIM 43-4430] D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v Line 57. Port width mismatch between VHDL formal port c of size 8 and Verilog actual of size 16
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1012.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1012.172 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property -dict [list CONFIG.c_use_pcin {true} CONFIG.c_c_width {16} CONFIG.c_out_high {15} CONFIG.c_out_low {0} CONFIG.c_c_latency {0}] [get_ips xbip_multadd_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'c_c_width' from '8' to '16' has been ignored for IP 'xbip_multadd_0'
+set_property -dict [list CONFIG.c_use_pcin {true} CONFIG.c_c_width {16} CONFIG.c_out_high {15} CONFIG.c_out_low {0} CONFIG.c_c_latency {0}] [get_ips xbip_multadd_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'c_c_width' from '8' to '16' has been ignored for IP 'xbip_multadd_0'
+export_ip_user_files -of_objects  [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset xbip_multadd_0 d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci
+INFO: [Project 1-386] Moving file 'd:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci' from fileset 'xbip_multadd_0' to fileset 'sources_1'.
+file delete -force d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0
+create_ip -name xbip_multadd -vendor xilinx.com -library ip -version 3.0 -module_name xbip_multadd_0 -dir d:/verilog_test/M2M/M2M.srcs/sources_1/ip
+set_property -dict [list CONFIG.c_use_pcin {true} CONFIG.c_a_width {8} CONFIG.c_b_width {8} CONFIG.c_c_width {16} CONFIG.c_out_high {15} CONFIG.c_out_low {0} CONFIG.c_c_latency {0}] [get_ips xbip_multadd_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'c_c_width' from '48' to '16' has been ignored for IP 'xbip_multadd_0'
+generate_target {instantiation_template} [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xbip_multadd_0'...
+generate_target all [get_files  d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xbip_multadd_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xbip_multadd_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xbip_multadd_0'...
+catch { config_ip_cache -export [get_ips -all xbip_multadd_0] }
+export_ip_user_files -of_objects [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci]
+launch_runs -jobs 4 xbip_multadd_0_synth_1
+[Mon Feb  3 22:55:13 2020] Launched xbip_multadd_0_synth_1...
+Run output will be captured here: D:/verilog_test/M2M/M2M.runs/xbip_multadd_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/xbip_multadd_0.xci] -directory D:/verilog_test/M2M/M2M.ip_user_files/sim_scripts -ip_user_files_dir D:/verilog_test/M2M/M2M.ip_user_files -ipstatic_source_dir D:/verilog_test/M2M/M2M.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/verilog_test/M2M/M2M.cache/compile_simlib/modelsim} {questa=D:/verilog_test/M2M/M2M.cache/compile_simlib/questa} {riviera=D:/verilog_test/M2M/M2M.cache/compile_simlib/riviera} {activehdl=D:/verilog_test/M2M/M2M.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_pulsation_array' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_pulsation_array_vlog.prj"
+"xvhdl --incr --relax -prj TB_pulsation_array_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/verilog_test/M2M/M2M.srcs/sources_1/ip/xbip_multadd_0/sim/xbip_multadd_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xbip_multadd_0
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1c83b10b893f497aa925d8ecaa804a67 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L xbip_multadd_v3_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_pulsation_array_behav xil_defaultlib.TB_pulsation_array xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port c [D:/verilog_test/M2M/M2M.srcs/sources_1/new/PE.v:54]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_multadd_v3_0_12.xbip_multadd_v3_0_12_viv_comp
+Compiling package mult_gen_v12_0_14.mult_gen_v12_0_14_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package xbip_multadd_v3_0_12.xbip_multadd_v3_0_12_pkg
+Compiling package xbip_dsp48_multadd_v3_0_5.xbip_dsp48_multadd_v3_0_5_viv_co...
+Compiling package mult_gen_v12_0_14.mult_gen_v12_0_14_viv_comp
+Compiling package xbip_dsp48_multadd_v3_0_5.xbip_dsp48_multadd_v3_0_5_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,carryinselreg=0...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(areg=...]
+Compiling architecture synth of entity xbip_dsp48_multadd_v3_0_5.xbip_dsp48_multadd_synth [\xbip_dsp48_multadd_synth(c_xdev...]
+Compiling architecture synth of entity xbip_dsp48_multadd_v3_0_5.xbip_dsp48_multadd_v3_0_5_viv [\xbip_dsp48_multadd_v3_0_5_viv(c...]
+Compiling architecture xilinx of entity xbip_multadd_v3_0_12.multadd_dsp [\multadd_dsp(c_xdevicefamily="vi...]
+Compiling architecture synth of entity xbip_multadd_v3_0_12.xbip_multadd_v3_0_12_viv [\xbip_multadd_v3_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity xbip_multadd_v3_0_12.xbip_multadd_v3_0_12 [\xbip_multadd_v3_0_12(c_xdevicef...]
+Compiling architecture xbip_multadd_0_arch of entity xil_defaultlib.xbip_multadd_0 [xbip_multadd_0_default]
+Compiling module xil_defaultlib.PE
+Compiling module xil_defaultlib.pulsation_array
+Compiling module xil_defaultlib.TB_pulsation_array
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_pulsation_array_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim/xsim.dir/TB_pulsation_array_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 54.234 ; gain = 1.012
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb  3 22:56:03 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1015.207 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '18' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/verilog_test/M2M/M2M.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_pulsation_array_behav -key {Behavioral:sim_1:Functional:TB_pulsation_array} -tclbatch {TB_pulsation_array.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_pulsation_array.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_pulsation_array_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1020.113 ; gain = 4.906
+run 20 us
+run 20 us
+run 20 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1026.000 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  3 23:39:12 2020...

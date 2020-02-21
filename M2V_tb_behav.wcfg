@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="M2V_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="M2V_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="304500001fs"></ZoomEndTime>
+      <Cursor1Time time="114500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="108"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/M2V_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M1" type="array">
+      <obj_property name="ElementShortName">M1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M2" type="array">
+      <obj_property name="ElementShortName">M2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M3" type="array">
+      <obj_property name="ElementShortName">M3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M4" type="array">
+      <obj_property name="ElementShortName">M4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/V" type="array">
+      <obj_property name="ElementShortName">V[31:0]</obj_property>
+      <obj_property name="ObjectShortName">V[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M2V_tb_module/count" type="array">
+      <obj_property name="ElementShortName">count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">count[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M2V_tb_module/PE_r1/in_A" type="array">
+      <obj_property name="ElementShortName">in_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M2V_tb_module/PE_r1/in_B" type="array">
+      <obj_property name="ElementShortName">in_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M2V_tb_module/PE_r1/count" type="array">
+      <obj_property name="ElementShortName">count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M2V_tb_module/PE_r1/P" type="array">
+      <obj_property name="ElementShortName">P[7:0]</obj_property>
+      <obj_property name="ObjectShortName">P[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M2V_tb_module/PE_r2/in_A" type="array">
+      <obj_property name="ElementShortName">in_A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_A[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/M2V_tb_module/PE_r2/in_B" type="array">
+      <obj_property name="ElementShortName">in_B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_B[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/MV1" type="array">
+      <obj_property name="ElementShortName">MV1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MV1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/MV2" type="array">
+      <obj_property name="ElementShortName">MV2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MV2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/MV3" type="array">
+      <obj_property name="ElementShortName">MV3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MV3[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/MV4" type="array">
+      <obj_property name="ElementShortName">MV4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MV4[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/DIMENSION" type="array">
+      <obj_property name="ElementShortName">DIMENSION[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DIMENSION[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M2V_tb/WIDTH" type="array">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+</wave_config>
